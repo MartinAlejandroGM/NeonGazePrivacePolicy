@@ -22,6 +22,10 @@ We also store a token so we can notify you about a new expense or a payment, and
 
 This data is used to sign in, show the household, calculate balances, notify the other members, and know whether the household has Premium. The invite link carries the household code so another person can join after signing in.
 
+The code and the link `gardewallet://join/{code}`, together with its QR code, are sent only when you tap share. Whoever receives them can join that household.
+
+The CSV of the expense history is created only when the household has Premium. It is sent only when you tap export and choose who receives it. It includes the date, the concept, the amount, and who paid.
+
 ## Who processes it
 
 Google Firebase Authentication, Cloud Firestore, and Cloud Messaging store the account, the household data, and the notices. Google Play processes the Premium payment. We do not sell data. We do not use ads or analytics. We do not ask for location or contacts.

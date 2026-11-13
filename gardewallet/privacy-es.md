@@ -22,6 +22,10 @@ También se guarda un token para enviarte avisos de un gasto nuevo o de un pago,
 
 Esos datos sirven para entrar a la cuenta, mostrar la casa, calcular saldos, avisar a los otros miembros y saber si la casa tiene Premium. El enlace de invitación lleva el código de la casa para que otra persona pueda unirse después de iniciar sesión.
 
+El código y el enlace `gardewallet://join/{code}`, junto con su código QR, se envían solo cuando pulsas compartir. Quien los recibe puede unirse a esa casa.
+
+El archivo CSV del historial de gastos se crea solo si la casa tiene Premium. Se envía solo cuando pulsas exportar y eliges a quién mandarlo. Incluye la fecha, el concepto, el monto y quién pagó.
+
 ## Quién los procesa
 
 Google Firebase Authentication, Cloud Firestore y Cloud Messaging guardan la cuenta, los datos de la casa y los avisos. Google Play procesa el pago de Premium. No vendemos datos. No usamos anuncios ni analítica. No pedimos ubicación ni contactos.
